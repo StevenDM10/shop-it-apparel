@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: white;
+}
+
+.locations-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 40px 20px;
+}
+
+.locations-text {
+    max-width: 550px;
+    text-align: center;
+}
+
+.store {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 6px 0;
+}
+
+.open {
+    color: green;
+    font-weight: 800;
+}
+
+.close {
+    color: red;
+    font-weight: 800;
+}
+
+.map img {
+    width: 450px;
+    height: auto;
+}

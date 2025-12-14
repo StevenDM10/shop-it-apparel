@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout | Shop It Apparel</title>
+  <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            
+            <span class="logo">
+            <img src="30.png" alt="Shop It Apparel" height="50">
+            </span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#" class="active">Sale</a>
+            <a href="#">The Brand Story</a>
+            <a href="#">Our Stores</a>
+        </nav>
+
+ 
+        <div class="nav-icons">
+            <input type="text" placeholder="Search">
+            <span class="icon">🔍</span>
+            <span class="icon">👜</span>
+        </div>
+    </header>
+
+<!-- CHECKOUT CONTENT -->
+<section class="checkout-container">
+
+  <!-- LEFT SIDE -->
+  <div class="checkout-left">
+
+    <div class="section-title">INFORMATION</div>
+
+    <label>CONTACT:</label>
+    <input type="email" placeholder="Email">
+
+    <div class="section-title small">DELIVERY</div>
+    <label>COUNTRY:</label>
+    <input type="text" value="Philippines">
+
+    <div class="name-row">
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Last Name">
+    </div>
+
+    <h3>ADDRESS</h3>
+
+    <input type="text" placeholder="Province">
+    <div class="name-row">
+      <input type="text" placeholder="Postal Code">
+      <input type="text" placeholder="City">
+    </div>
+
+    <input type="text" placeholder="House No. / Street">
+    <input type="text" placeholder="Barangay">
+
+    <div class="checkbox">
+      <input type="checkbox">
+      <span>Save this information next time</span>
+    </div>
+
+    <a href="cart.html" class="return-cart">← Return to cart</a>
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="checkout-right">
+
+    <div class="section-title">SHIP & PAYMENT</div>
+
+    <h3>MODE OF PAYMENT</h3>
+
+    <label class="radio">
+      <input type="radio" name="payment"> Cash on Delivery
+    </label>
+
+    <label class="radio">
+      <input type="radio" name="payment">
+      Cashless on Delivery (Card / Online Bank)
+    </label>
+
+<div class="payment-icons">
+
+  <label class="payment-option">
+    <input type="radio" name="payment-method" value="visa">
+    <span>VISA</span>
+  </label>
+
+  <label class="payment-option">
+    <input type="radio" name="payment-method" value="gcash">
+    <span>GCash</span>
+  </label>
+
+  <label class="payment-option">
+    <input type="radio" name="payment-method" value="maya">
+    <span>Maya</span>
+  </label>
+
+  <label class="payment-option">
+    <input type="radio" name="payment-method" value="ub">
+    <span>UB</span>
+  </label>
+
+</div>
+
+
+    <div class="summary">
+      <p>Subtotal: <span>₱300</span></p>
+      <p>Shipping fee: <span>₱50</span></p>
+      <hr>
+      <p class="total">TOTAL: <span>₱350</span></p>
+    </div>
+
+    <button class="checkout-btn">CHECK OUT</button>
+
+  </div>
+
+</section>
+<script src="Web.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In | Shop It Apparel</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="signin-header">
+        <div class="red-bar left"></div>
+
+        <!-- LOGO (CLICKABLE) -->
+        <a href="index.html" class="logo-link">
+            <div class="logo-center">
+            <span class="logo">
+                <img src="30.png" alt="Shop It Apparel" height="50">
+            </span>
+            </div>
+        </a>
+
+        <div class="red-bar right"></div>
+    </header>
+
+    <hr class="divider">
+
+    <!-- SIDE TEXT -->
+    <div class="side-text left-text">SHOP IT</div>
+    <div class="side-text right-text">APPAREL</div>
+
+    <!-- SIGN IN FORM -->
+    <section class="signin-container">
+        <div class="signin-title">SIGN IN</div>
+
+        <form onsubmit="signIn(event)">
+            <input type="email" placeholder="Email address" required>
+            <input type="password" placeholder="Password" required>
+
+            <div class="forgot">Forgot Password?</div>
+
+            <button type="submit" class="signin-btn">SIGN IN</button>
+        </form>
+    </section>
+
+    <script src="Web.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* =====================
+   SALE PRICING
+===================== */
+
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background-color: white;
+}
+
+.old-price {
+    color: red;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: white;
+    font-size: 22px;
+}

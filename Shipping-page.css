@@ -1,0 +1,219 @@
+  /* --- General Reset & Styling --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            background-color: #fff;
+        }
+
+        /* --- Header & Navigation --- */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            border-bottom: 1px solid #000; 
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        /* Logo/Icon */
+        .logo-icon {
+            font-size: 30px;
+            line-height: 1;
+            margin-right: 5px;
+            position: relative;
+        }
+        .logo-text {
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            position: static;
+            margin-left: 8px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            padding-bottom: 5px;
+        }
+
+        .nav-item.active a {
+            color: #e53935; /* Red color */
+            border-bottom: 2px solid #e53935;
+        }
+
+        .search-cart {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-bar {
+            border: 1px solid #000;
+            padding: 5px 10px;
+            height: 20px;
+            width: 150px;
+        }
+
+        /* for icons*/
+.icon {
+            font-size: 20px;
+        }
+
+        /* Container for the cart icon and counter */
+        .cart-icon {
+            position: relative;
+        }
+
+ 
+        .cart-count {
+            position: absolute;
+            top: -5px; 
+            right: -12px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 1px 5px;
+            font-size: 10px;
+            font-weight: bold;
+            line-height: 1;
+
+            z-index: 10;
+            display: none; /* Hidden by default */
+        }
+
+        /* Showing count '1' as in the image */
+        .cart-icon.has-items .cart-count {
+            display: block;
+        }
+
+        /* --- Main Content Layout --- */
+        .main-content {
+            padding: 10px 40px;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .order-header {
+            background-color: #e53935;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px 0;
+            width: 300px;
+            margin: 20px auto 40px auto;
+        }
+
+        /* --- Status Icons Container --- */
+        .status-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 800px;
+           margin: 100px auto 0 auto;
+        }
+
+        .status-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            width: 250px; 
+        }
+
+        .status-circle {
+            width: 150px;
+            height: 150px;
+            background-color: #37b33b; 
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px; 
+        }
+
+        .status-icon {
+            font-size: 70px;
+            color: #000000;
+            line-height: 1;
+        }
+        
+        /* Package Icon */
+        .icon-package::before { content: '\1F4E6'; } 
+        /* Truck Icon */
+        .icon-truck::before { content: '\1F69B'; } 
+        /* Checkmark Icon */
+        .icon-check::before { content: '\2714'; } 
+
+        .status-text {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+/* --- Indicator & Text Styling --- */
+
+/* 1. Base styles for the Black Triangle (Indicator) */
+.indicator {
+    position: absolute;
+    top: 170px; 
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #000; 
+    
+    /* Hide by default */
+    opacity: 0;
+    visibility: hidden; 
+    transition: opacity 0.3s ease; 
+}
+
+.status-text {
+    position: absolute;
+    top: 195px; 
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap; 
+    color: #000;
+
+    /* Hide by default */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease; 
+}
+
+/* --- THE HOVER INTERACTION --- */
+.status-step:hover .indicator {
+    opacity: 1;
+    visibility: visible;
+}
+.status-step:hover .status-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Optional: Slight zoom effect on the circle when hovering */
+.status-step:hover .status-circle {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+    

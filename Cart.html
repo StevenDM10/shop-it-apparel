@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart | Shop It Apparel</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            
+            <span class="logo">
+            <img src="30.png" alt="Shop It Apparel" height="50">
+            </span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#" class="active">Sale</a>
+            <a href="#">The Brand Story</a>
+            <a href="#">Our Stores</a>
+        </nav>
+
+ 
+        <div class="nav-icons">
+            <input type="text" placeholder="Search">
+            <span class="icon">🔍</span>
+            <span class="icon">👜</span>
+        </div>
+    </header>
+
+<!-- CART TITLE -->
+<div class="page-title">CART</div>
+
+<!-- CART CONTENT -->
+<section class="cart">
+
+    <!-- HEADERS -->
+    <div class="cart-header">
+        <span>ITEM</span>
+        <span>QUANTITY</span>
+        <span>TOTAL</span>
+    </div>
+
+    <!-- ITEM 1 -->
+    <div class="cart-item">
+        <div class="cart-product">
+            <div class="cart-img">
+                <img src="4.png">
+            </div>
+            <p>S-3 DYE</p>
+        </div>
+
+        <div class="cart-qty">
+            <button onclick="changeQty(0, -1)">-</button>
+            <span id="qty-0">1</span>
+            <button onclick="changeQty(0, 1)">+</button>
+        </div>
+
+        <div class="cart-price">
+            ₱ <span id="total-0">100</span>
+        </div>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="cart-item">
+        <div class="cart-product">
+            <div class="cart-img">
+                <img src="6.png">
+            </div>
+            <p>S-9 STRP</p>
+        </div>
+
+        <div class="cart-qty">
+            <button onclick="changeQty(1, -1)">-</button>
+            <span id="qty-1">1</span>
+            <button onclick="changeQty(1, 1)">+</button>
+        </div>
+
+        <div class="cart-price">
+            ₱ <span id="total-1">200</span>
+        </div>
+    </div>
+
+    <!-- SUBTOTAL -->
+    <div class="cart-summary">
+        <p>SUBTOTAL: ₱ <span id="subtotal">300</span></p>
+        <button class="checkout-btn">CHECK OUT</button>
+    </div>
+
+</section>
+
+<script src="Web.js"></script>
+
+</body>
+</html>
